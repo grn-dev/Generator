@@ -1,0 +1,53 @@
+return await _mediator.SendQuery(
+        new GetPredicateToDestQuery<Fountain, int, FountainExpose>()
+        {
+            Predicate = c => c.Id == id
+        });
+
+                 
+
+return await _mediator.SendQuery(
+             new GetAllByPredicateToDestQuery<Barrier, int, BarrierExpose>()
+             {
+                 Predicate = c => c.id
+             });
+              
+
+var fountain = await _mediator.SendQuery(
+        new GetSinglePredicateToDestQuery<Fountain, int, FountainExpose>()
+        {
+            Predicate = c => c.Id == id
+        });
+
+var exist = await _mediator.SendQuery(
+new AnyPredicateQuery<ChatRoomUser, int>()
+{
+    Predicate = c => c.ChatRoomId == room.Id && c.ChatUserId == user.Id
+});
+
+
+var x = await _mediator.SendQuery(
+       new PagablePredicateQuery
+       <AccountTransactionRequest, int, AccountTransactionRequestViewModel.AccountTransactionRequestGetByDateAndStatus>()
+       {
+           Pageable = pageable,
+           Predicate = c =>
+           (accountTransactionInputGetAll.FromDate == null || c.CreateDate.Date >= accountTransactionInputGetAll.FromDate.Value.Date)
+        });
+
+
+return await _mediator.SendQuery(
+new PagableQuery<AccountTransactionRequest, int, AccountTransactionRequestViewModel.AccountTransactionRequestExpose>()
+{
+    Pageable = pageable
+});
+
+
+
+.ForMember(desc => desc.FileName, so => so.MapFrom(d => d.File.FileName))
+
+Add-Migration test -Context AcquirerContext
+var userId = User.GetUserId();
+
+CurrentUserService
+private readonly Lazy<ICurrentUserService> _currentUserService;

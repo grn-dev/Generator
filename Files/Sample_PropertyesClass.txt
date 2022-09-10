@@ -1,0 +1,8 @@
+	public string Title { get; private set; }
+        public string Descriptions { get; private set; }
+        public int Displaylevel { get; private set; }
+        public int PaymentTimeLimit { get; private set; }
+        public int? DoubtfulPaymentTimeLimit { get; private set; }
+        public int StatementsStatus { get; private set; }
+        public int SendType { get; private set; }
+        public int ComplaintTime { get; private set; }

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>CodeGenerator</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="NetDevPack" Version="1.1.1" />
+    <PackageReference Include="PluralizeService.Core" Version="1.2.21147.2" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />  
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MakaTrip.Domain">
+      <HintPath>..\..\..\..\..\..\workshop\MakaTrip\MakaTrip.Domain\bin\Debug\net5.0\MakaTrip.Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

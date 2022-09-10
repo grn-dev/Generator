@@ -1,0 +1,3 @@
+        public string MinVersion { get; private set; }
+        public string MaxVersion { get; private set; }
+        public VersionAPIType VersionAPIType { get; private set; }

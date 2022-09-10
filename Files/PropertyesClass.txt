@@ -1,0 +1,4 @@
+	public int FinancierId { get; private set; }
+        public decimal Debit { get; private set; }
+        public decimal Credit { get; private set; }
+        public decimal Remain { get; private set; }
